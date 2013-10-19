@@ -132,11 +132,13 @@ object fRegEx: TfRegEx
         Width = 400
       end
       item
-        Width = 150
+        Width = 250
       end
       item
         Width = 50
       end>
+    ExplicitLeft = 3
+    ExplicitTop = 501
   end
   object Panel3: TPanel
     AlignWithMargins = True

@@ -87,8 +87,8 @@
 			<DCC_DebugInformation>false</DCC_DebugInformation>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
-			<VerInfo_Build>1</VerInfo_Build>
-			<VerInfo_Keys>CompanyName=eugostododelphi.blogspot.com;FileDescription=Aplicativo para Estudo de Expressão regular;FileVersion=1.0.0.1;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0;Comments=Aplicativo especilamente desenvolvido para os artigos publicados na Active Delphi no primeiro semestre de 2012</VerInfo_Keys>
+			<VerInfo_Build>2</VerInfo_Build>
+			<VerInfo_Keys>CompanyName=eugostododelphi.blogspot.com;FileDescription=Aplicativo para Estudo de Expressão regular;FileVersion=1.0.0.2;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0;Comments=Aplicativo especilamente desenvolvido para os artigos publicados na Active Delphi no primeiro semestre de 2012</VerInfo_Keys>
 			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
 			<VerInfo_Locale>1046</VerInfo_Locale>
 		</PropertyGroup>

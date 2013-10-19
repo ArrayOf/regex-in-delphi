@@ -66,15 +66,16 @@ implementation
 uses
   TypInfo,
   Diagnostics,
-  ShellApi;
+  ShellApi,
+  StrUtils;
 
 {$R *.dfm}
 
 procedure TfRegEx.bProcessarClick(Sender: TObject);
 var
   _Matches: RegularExpressions.TMatchCollection; // Coleção de combinações
-  _Matche : RegularExpressions.TMatch; // Uma combinação
-  _Group  : RegularExpressions.TGroup; // Um grupo
+  _Matche : RegularExpressions.TMatch;           // Uma combinação
+  _Group  : RegularExpressions.TGroup;           // Um grupo
 
   oNode         : TTreeNode; // Nó da treeview com as informações de uma combinação
   oNodeGrupo    : TTreeNode; // Nó da treeview criando o nó de grupos
@@ -121,6 +122,7 @@ begin
             oNodeItemGrupo := tvResultado.Items.AddChild(oNodeGrupo, _Group.Value);
             tvResultado.Items.AddChild(oNodeItemGrupo, Format('Posição: %d', [_Group.Index]));
             tvResultado.Items.AddChild(oNodeItemGrupo, Format('Tamanho: %d', [_Group.Length]));
+            tvResultado.Items.AddChild(oNodeItemGrupo, Format('Sucesso: %s', [IfThen(_Group.Success, 'Sim', 'Não')]))
           end;
         end;
 
